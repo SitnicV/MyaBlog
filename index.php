@@ -20,7 +20,7 @@ if ( has_post_thumbnail() ) {
 
 ?>
 
-<div class="col-6">
+<div class="col-sm-6">
 
 
 <div class="card-receta  ">

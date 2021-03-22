@@ -12,6 +12,7 @@ This theme, like WordPress, is licensed under the GPL.
 Use it to make something cool, have fun, and share what you've learned with others.
 */
 @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Itim&display=swap');
 body{
   font-family: 'Comfortaa', cursive; 
   background-color: #eee;
@@ -33,7 +34,7 @@ body{
   min-height: 200px;
 }
 .card-receta__body{ padding: 15px;}
-.card-receta__title{font-size:1.2rem; font-weight: bold; color:#000;    font-weight: bold; margin-bottom:10px;}
+.card-receta__title{font-size:1.2rem; font-weight: bold; color:#000;    font-weight: bold; margin-bottom:10px; }
 .card-receta__desc{}
 .card-receta .btn{font-size: 0.8rem;}
 .btn{border-radius: 0;}
@@ -41,4 +42,23 @@ body{
   background:#73AA0A;
   border-color:#73AA0A;
   color:#222
+}
+
+.sigle-post__content{
+  padding:40px 40px 0 40px;
+  background:#fff;
+  margin:20px 20px;
+}
+
+.wp-block-wpzoom-recipe-card-block-ingredients, .wp-block-wpzoom-recipe-card-block-directions{
+  max-width: 100%;
+}
+
+.wp-block-wpzoom-recipe-card-block-ingredients,
+.ingredients-title,
+.single-post__title,
+.directions-title,
+.card-receta__title
+{
+  font-family: 'Itim', cursive!important;
 }

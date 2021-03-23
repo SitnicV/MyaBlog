@@ -13,6 +13,7 @@ Use it to make something cool, have fun, and share what you've learned with othe
 */
 @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;600;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Itim&display=swap');
+
 body{
   font-family: 'Comfortaa', cursive; 
   background-color: #eee;
@@ -62,3 +63,35 @@ body{
 {
  /* font-family: 'Itim', cursive!important; */
 }
+
+
+.pagination {
+  clear:both;
+  padding:20px 0;
+  position:relative;
+  font-size:11px;
+  line-height:13px;
+  display: block;
+  }
+  
+  .pagination span, .pagination a {
+  display:inline-block;
+ 
+  margin: 2px 2px 2px 0;
+  padding:6px 9px 5px 9px;
+  text-decoration:none;
+  width:auto;
+  color:#fff;
+  background: #555;
+  }
+  
+  .pagination a:hover{
+  color:#fff;
+  background: #73AA0A;
+  }
+  
+  .pagination .current{
+  padding:6px 9px 5px 9px;
+  background: #73AA0A;
+  color:#fff;
+  }

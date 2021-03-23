@@ -13,6 +13,13 @@ Use it to make something cool, have fun, and share what you've learned with othe
 */
 @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;600;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Itim&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ruge+Boogie&display=swap');
+
+.logo{
+  font-family: 'Comfortaa', cursive; 
+  font-size: 8rem;
+  text-shadow: 0 5px 10px #006400;
+}
 
 body{
   font-family: 'Comfortaa', cursive; 
@@ -21,7 +28,7 @@ body{
 .card-receta{
   background-color:#fff;
   margin-top:20px;
-  border-bottom:2px solid #73AA0A
+  
  
 
 }
@@ -40,9 +47,9 @@ body{
 .card-receta .btn{font-size: 0.8rem;}
 .btn{border-radius: 0;}
 .btn-success{
-  background:#73AA0A;
-  border-color:#73AA0A;
-  color:#222
+  background:#006400;
+  border-color:#006400;
+  color:#fff
 }
 
 .sigle-post__content{
@@ -87,11 +94,43 @@ body{
   
   .pagination a:hover{
   color:#fff;
-  background: #73AA0A;
+  background: #006400;
   }
   
   .pagination .current{
   padding:6px 9px 5px 9px;
-  background: #73AA0A;
+  background: #006400;
   color:#fff;
+  }
+.bg-success{background:#3bb78f!important}
+  .nav-link{font-size: 1.2rem; font-weight: bold; color:#fff!important; margin-left:10px;border-radius: 2px;background-color: #006400;}
+  .nav-link:hover{
+    background:#eee;
+    color:#222!important;
+  }
+
+  .bg-main{
+    background-color: #006400;
+    background-image: linear-gradient(180deg, #3bb78f 0%, #006400 80%);
+    background-image: url('/wp-content/uploads/2021/03/bg-1.png');
+    background-position: center center;
+  }
+
+  .btn-receta{
+    padding:0; 
+    margin:0; 
+    border:0; 
+    background:transparent; 
+    text-decoration:underline
+  }
+
+  .card-receta__link:hover .btn-receta,
+  .card-receta__link:hover .card-receta__title,
+  .card-receta__link:hover .card-receta__desc
+  {
+    color:#006400
+  }
+
+  .card-receta__link:hover .btn-receta:after{
+    content:"\27A4";
   }

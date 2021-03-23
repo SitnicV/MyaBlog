@@ -1,4 +1,4 @@
-<?php get_header(); ?>
+<?php get_header("home"); ?>
 
 
 <div class="container mb-4">
@@ -33,7 +33,7 @@ if ( has_post_thumbnail() ) {
       <div class="card-receta__body">
         <div class="card-receta__title"><?php the_title(); ?></div>
          <p  class="card-receta__desc"><?php the_excerpt(); ?></p>
-         <button class="btn btn-success btn-sm">Mai mult</button>
+         <button class="btn-receta">Mai mult</button>
          </div>
     </div>
   </div>

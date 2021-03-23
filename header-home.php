@@ -8,12 +8,12 @@
     <?php wp_head(); ?>
 </head>
 <body>
-<div class="bg-main pb-5 position-relative" style="z-index:2">
+<div class="bg-main pb-5">
 <div class="container">
 
 <div class="row">
 
-<div class="col-12 text-center"><a class="mt-3 mb-4 d-block text-decoration-none  text-light logo" style="font-size:4rem" href="/"><strong>Mya Sun</strong></a></div>
+<div class="col-12 text-center"><a class="mt-3 mb-4 d-block text-decoration-none  text-light logo" href="/"><strong>Mya Sun</strong></a></div>
 <div class="col-12 text-center">
 <nav class="navbar navbar-expand-lg navbar-light d-inline-block">
 <ul class="navbar-nav">
@@ -47,7 +47,7 @@
 </div>
 
 
-<div class="container mt-4 mb-1 d-none">
+<div class="container mt-4 mb-1">
 <div class="row">
 <div class="col-6"></div>
 <div class="col-6"><form action="#" class="position-relative">

@@ -1,6 +1,9 @@
-<?php get_header(); ?>
-
-
+<?php
+/**
+ * Template name: Recete Mancare
+ */
+get_header();
+?>
 <div class="container mb-4">
 
 
@@ -63,7 +66,5 @@ if ( has_post_thumbnail() ) {
 </div>
 
 </div>
-
-
-
-<?php get_footer(); ?>
+<?php
+get_footer();

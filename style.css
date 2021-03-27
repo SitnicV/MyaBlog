@@ -62,14 +62,6 @@ body{
   max-width: 100%;
 }
 
-.wp-block-wpzoom-recipe-card-block-ingredients,
-.ingredients-title,
-.single-post__title,
-.directions-title,
-.card-receta__title
-{
- /* font-family: 'Itim', cursive!important; */
-}
 
 
 .pagination {
@@ -103,11 +95,7 @@ body{
   color:#fff;
   }
 .bg-success{background:#3bb78f!important}
-  .nav-link{font-size: 1.2rem; font-weight: bold; color:#fff!important; margin-left:10px;border-radius: 2px;background-color: #006400;}
-  .nav-link:hover{
-    background:#eee;
-    color:#222!important;
-  }
+ 
 
   .bg-main{
     background-color: #006400;
@@ -133,4 +121,29 @@ body{
 
   .card-receta__link:hover .btn-receta:after{
     content:"\27A4";
+  }
+
+
+  .navbar-toggler{
+    border:none;
+    padding:0;
+  }
+  .nav-link{
+    background-color: #fff;
+    color: #006400;
+    padding:10px!important;
+    font-weight: bold;
+    margin-left: 5px;
+   }
+   .nav-link:hover{
+     background-color: #006400;
+     color: #fff;
+   }
+  @media (max-width:990px){
+    .nav-link{ 
+      display: block;
+     
+      border-bottom:2px solid #006400;
+     
+    }
   }

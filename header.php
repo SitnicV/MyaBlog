@@ -7,38 +7,43 @@
     <title>Document</title>
     <?php wp_head(); ?>
 </head>
-<body>
-<div class="bg-main pb-5 position-relative" style="z-index:2">
+<body style="padding-top:92px">
+<div class="bg-main  position-fixed p-lg-" style="z-index:2; width:100%; top:0; box-shadow:0 0 5px #444">
 <div class="container">
 
 <div class="row">
 
-<div class="col-12 text-center"><a class="mt-3 mb-4 d-block text-decoration-none  text-light logo" style="font-size:4rem" href="/"><strong>Mya Sun</strong></a></div>
-<div class="col-12 text-center">
-<nav class="navbar navbar-expand-lg navbar-light d-inline-block">
-<ul class="navbar-nav">
-      <li class="nav-item active">
-        <a class="nav-link" href="/">Acasă <span class="sr-only">(current)</span></a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Alimentaţie</a>
-      </li>
+<div class="col-8 col-lg-3"><a class="mt-3 mt-lg-1 d-block text-decoration-none  text-light logo" style="font-size:2rem" href="/"><strong>Mya Sun</strong></a></div>
+<div class="col-4 d-lg-none text-right navbar-expand-lg">  <button type="button" class="navbar-toggler mt-4 float-end" data-bs-toggle="collapse" data-bs-target="#mainmenu">
+                    <span class="btn btn-success"><i class="icofont-navigation-menu text-light"></i></span>
+                   
+                </button></div>
+<div class="col-lg-9">
+<div class="navbar navbar-expand-lg float-lg-end " role="navigation">
+       
+              
+         
+     
+            <div class="collapse navbar-collapse" id="mainmenu">
+                <?php  /* menu */
+                    wp_nav_menu( array(
+                                'menu'              => 'top_menu',
+                                'theme_location'    => 'top_menu',
+                                'depth'             => 5,
+                             
+                                'menu_class'        => 'nav navbar-nav',
+                                'fallback_cb'       => 'wp_bootstrap_navwalker::fallback',
+                                'walker'            => new wp_bootstrap_navwalker())
+                    ); 
+                 ?>
+            </div>
+        </div><!-- Navigation -->
+ 
+ 
 
-      <li class="nav-item">
-        <a class="nav-link" href="#">Beauty</a>
-      </li>
 
-      <li class="nav-item">
-        <a class="nav-link" href="#">Parenting</a>
-      </li>
 
-      <li class="nav-item">
-        <a class="nav-link" href="#">Caracter</a>
-      </li>
-
-      
-    </ul>
-    </nav>
+ 
 </div>
 
 </div>

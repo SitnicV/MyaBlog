@@ -54,3 +54,33 @@ if ( ! function_exists( 'mya_nav_menus' ) ) {
 }
 
 require_once('wp_bootstrap_navwalker.php');
+
+
+
+function get_my_cat($parent_id, $curent_link=0){
+
+
+    $categories=get_categories(
+        array( 'parent' =>$parent_id )
+    );
+    if(!empty($categories)){
+        echo "<ul>";
+       
+    if(!empty($curent_link)){
+        echo "<li>";
+        echo "<a style='background:#333; color:#fff' href='".get_category_link($parent_id)."'>Toate</a>";
+        echo "</li>";
+
+    }
+    foreach($categories as $category){
+        echo "<li>";
+        echo "<a href='".get_category_link($category->term_id)."'>".$category->name."</a>";
+        get_my_cat($category->term_id);
+        echo "</li>";
+    }
+    echo "</ul>";   
+
+}
+
+  
+}

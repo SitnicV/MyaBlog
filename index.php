@@ -1,4 +1,40 @@
-<?php get_header(); ?>
+<?php
+
+get_header();
+?>
+
+<div class="container">
+
+<div class="row">
+
+<div class="col-12">
+<button class="btn btn-secondary d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+<strong>   Vezi subcategorii</strong>
+  </button>
+</div>
+</div>
+
+</div>
+ 
+
+<div class="collapse d-lg-block" id="collapseExample">
+  
+
+<div class="container">
+
+<div class="row">
+<div class="col-12">
+<div id="top-filter">
+<?php get_my_cat(21, 1); ?>
+</div>
+
+
+</div>
+</div>
+</div>
+
+</div>
+
 
 
 <div class="container mb-4">
@@ -63,7 +99,5 @@ if ( has_post_thumbnail() ) {
 </div>
 
 </div>
-
-
-
-<?php get_footer(); ?>
+<?php
+get_footer();

@@ -17,7 +17,7 @@ add_action( 'wp_enqueue_scripts', 'mya_css' );
 // Register Scripts
 function mya_js() {
 	wp_enqueue_script( 'jquery' );
-	wp_register_script( 'bootstrap', get_stylesheet_directory_uri()."/assets/js/bootstrap.js", false, false );
+	wp_register_script( 'bootstrap', get_stylesheet_directory_uri()."/assets/js/bootstrap.bundle.js", false, false );
 	wp_enqueue_script( 'bootstrap' );
 
 

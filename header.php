@@ -7,7 +7,7 @@
     <title>Document</title>
     <?php wp_head(); ?>
 </head>
-<body style="padding-top:92px">
+<body style="padding-top:80px">
 <div class="bg-main  position-fixed p-lg-" style="z-index:2; width:100%; top:0; box-shadow:0 0 5px #444">
 <div class="container">
 
